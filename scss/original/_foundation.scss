@@ -1,0 +1,63 @@
+ul {
+	padding-left: calc(#{$f-default-fontSize}* 2.5);
+	margin-bottom: 16px;
+	ul {
+		padding-left: calc(#{$f-default-fontSize});
+	}
+}
+.ul {
+	padding: 0 calc(#{$f-default-fontSize});
+	* {
+		list-style-type: none;
+	}
+}
+ol {
+	padding: 0 calc(#{$f-default-fontSize}* 2.5);
+	ol {
+		padding: 0 calc(#{$f-default-fontSize});
+	}
+}
+.ol {
+}
+dl {
+}
+dt {
+}
+dd {
+}
+li {
+	position: relative;
+	padding-bottom: calc(#{$f-default-fontSize}*0.0);
+	// padding-bottom: 8px;
+	line-height: 1.6;
+	// list-style-type: none;
+}
+ul > .li {
+	list-style-type: none;
+	&:before { // https://www.tam-tam.co.jp/tipsnote/html_css/post7742.html
+		content: '';
+		display: inline-block;
+		position: absolute;
+		left: calc(#{$f-default-fontSize} * -2.5);
+		width: 0;
+		height: 0;
+		// margin-top: calc(#{$base-line-height} / 2);
+		margin-top: calc(var(--space)/2);
+		// margin-right: 4px;
+		margin-left: 16px;
+		border: transparent solid 5px;
+		border-left-color: $sub-color;
+		// vertical-align: 4px;
+	}
+	// &:before {
+	// 	content: '';
+	// 	display: inline-block;
+	// 	width: 0;
+	// 	height: 0;
+	// 	margin-right: 4px;
+	// 	margin-left: 4px;
+	// 	border: transparent solid 5px;
+	// 	border-left-color: $sub-color;
+	// 	vertical-align: 4px;
+	// }
+}

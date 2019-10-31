@@ -1,0 +1,19 @@
+:root {
+  --default-fontSize: 16px;
+  --space: 16px;
+  --space-S: calc(var(--space) / 2);
+  --space-L: calc(var(--space) * 1.5);
+  --space-XL: calc(var(--space) * 2);
+  --space-XXL: calc(var(--space) * 4);
+  --border-px: 1px;
+  --border-color: var(--sub-color);
+  --border-radius: 4px;
+  --circle-size: 50px;
+  --hr-color: var(--sub-color);
+  --hr-mrgn-l: 0;
+  --hr-mrgn-t: var(--space-L);
+  --hr-mrgn-r: 0;
+  --hr-mrgn-b: var(--space-L);
+  --colomn-count: 1;
+  --pager-w: 1rem;
+  --pager-h: 1rem; }
