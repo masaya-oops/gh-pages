@@ -1,3 +1,3 @@
 # gh-pages
 
-https://masaya-oops.github.io/repository/
+https://masaya-oops.github.io/gh-pages/
