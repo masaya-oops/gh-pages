@@ -1,3 +1,3 @@
-# gh-pages
+# portfolio
 
-https://masaya-oops.github.io/repository/
+https://masaya-oops.github.io/portfolio/
