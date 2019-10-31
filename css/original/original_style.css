@@ -1,0 +1,154 @@
+:root {
+  --default-fontSize: 16px;
+  --space: 16px;
+  --space-S: calc(var(--space) / 2);
+  --space-L: calc(var(--space) * 1.5);
+  --space-XL: calc(var(--space) * 2);
+  --space-XXL: calc(var(--space) * 4);
+  --border-px: 1px;
+  --border-color: var(--sub-color);
+  --border-radius: 4px;
+  --circle-size: 50px;
+  --hr-color: var(--sub-color);
+  --hr-mrgn-l: 0;
+  --hr-mrgn-t: var(--space-L);
+  --hr-mrgn-r: 0;
+  --hr-mrgn-b: var(--space-L);
+  --colomn-count: 1;
+  --pager-w: 1rem;
+  --pager-h: 1rem; }
+
+ul {
+  padding-left: calc(16px* 2.5);
+  margin-bottom: 16px; }
+  ul ul {
+    padding-left: calc(16px); }
+
+.ul {
+  padding: 0 calc(16px); }
+  .ul * {
+    list-style-type: none; }
+
+ol {
+  padding: 0 calc(16px* 2.5); }
+  ol ol {
+    padding: 0 calc(16px); }
+
+li {
+  position: relative;
+  padding-bottom: calc(16px*0.0);
+  line-height: 1.6; }
+
+ul > .li {
+  list-style-type: none; }
+  ul > .li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: calc(16px * -2.5);
+    width: 0;
+    height: 0;
+    margin-top: calc(var(--space)/2);
+    margin-left: 16px;
+    border: transparent solid 5px;
+    border-left-color: #868e96; }
+
+@font-face {
+  font-family: "rounded-mplus-2p-light";
+  src: url("../../font/rounded-l-mplus-2p-light.woff") format("woff"), url("../../font/rounded-l-mplus-2p-light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "rounded-mplus-2p-medium";
+  src: url("../../font/rounded-l-mplus-2p-medium.woff") format("woff"), url("../../font/rounded-l-mplus-2p-medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Neothic";
+  src: url("../../font/Neothic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "m-plus-1p";
+  src: url("../../font/M_PLUS_1p.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "rounded-l-mplus-1mn-light";
+  src: url("../../font/rounded-l-mplus-1mn-light.woff") format("woff"), url("../../font/rounded-l-mplus-1mn-light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "rounded-l-mplus-1mn-regular";
+  src: url("../../font/rounded-l-mplus-1mn-regular.woff") format("woff"), url("../../font/rounded-l-mplus-1mn-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "rounded-l-mplus-1mn-medium";
+  src: url("../../font/rounded-l-mplus-1mn-medium.woff") format("woff"), url("../../font/rounded-l-mplus-1mn-medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Saira-Extra-Condensed";
+  src: url("../../font/Saira-Extra-Condensed.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "logotype-jp";
+  src: url("../../font/logotypejp_mp_m.ttf") format("truetype"); }
+
+.font-jp-1 {
+  font-family: "Saira-Extra-Condensed", "logotype-jp", "rounded-l-mplus-1mn-regular", sans-serif; }
+
+body {
+  background-color: #f9f7f1;
+  font-family: "Saira-Extra-Condensed" "rounded-l-mplus-1mn-regular", "m-plus-1p", sans-serif; }
+
+img {
+  -webkit-filter: grayscale(40%) sepia(50%);
+  filter: grayscale(40%) sepia(50%);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  img:hover {
+    -webkit-filter: none;
+    filter: none; }
+
+h2 .subheading {
+  padding-left: 8px; }
+
+.navbar {
+  color: #bd5d38;
+  background-color: rgba(45, 55, 65, 0.9);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px); }
+
+.headerTitle {
+  font-family: 'Neothic'; }
+
+.defultProfImg {
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.2); }
+
+.name {
+  word-break: break-all; }
+  .name .firstName {
+    word-break: keep-all; }
+
+.resume-content {
+  width: 100%; }
+  .resume-content ul {
+    margin-top: 8px; }
+
+#about .tags {
+  padding: 0; }
+  #about .tags li {
+    padding: 8px 16px;
+    margin: 4px;
+    line-height: 1rem;
+    border-radius: 10rem;
+    color: #fff;
+    background-color: #bd5d38; }
+
+#experience .h6 {
+  display: inline;
+  padding: 0 8px;
+  line-height: .5rem;
+  min-width: 100px;
+  background-color: rgba(45, 55, 65, 0.9);
+  color: #fff; }
+  #experience .h6 i {
+    padding: 0 8px; }

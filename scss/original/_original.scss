@@ -1,0 +1,155 @@
+$accent-color: #f06d06;
+$accent-color:#bd5d38;
+$accent-bg-color: rgba(45, 55, 65, 0.9);
+
+@font-face {
+  font-family: "rounded-mplus-2p-light";
+	src:
+	url('../../font/rounded-l-mplus-2p-light.woff') format('woff'),
+	url('../../font/rounded-l-mplus-2p-light.ttf') format('truetype');
+}
+@font-face {
+	font-family: "rounded-mplus-2p-medium";
+	src:
+	url('../../font/rounded-l-mplus-2p-medium.woff') format('woff'),
+	url('../../font/rounded-l-mplus-2p-medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Neothic";
+	src:
+	url('../../font/Neothic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "m-plus-1p";
+	src:
+	url('../../font/M_PLUS_1p.woff2') format('woff2');
+}
+@font-face {
+	font-family: "rounded-l-mplus-1mn-light";
+	src:
+	url('../../font/rounded-l-mplus-1mn-light.woff') format('woff'),
+	url('../../font/rounded-l-mplus-1mn-light.ttf') format('truetype');
+}
+@font-face {
+	font-family: "rounded-l-mplus-1mn-regular";
+	src:
+	url('../../font/rounded-l-mplus-1mn-regular.woff') format('woff'),
+	url('../../font/rounded-l-mplus-1mn-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: "rounded-l-mplus-1mn-medium";
+	src:
+	url('../../font/rounded-l-mplus-1mn-medium.woff') format('woff'),
+	url('../../font/rounded-l-mplus-1mn-medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: "Saira-Extra-Condensed";
+	src:
+	url('../../font/Saira-Extra-Condensed.woff2') format('woff2');
+}
+@font-face {
+	font-family: "logotype-jp";
+	src:
+	url('../../font/logotypejp_mp_m.ttf') format('truetype');
+}
+
+.font-jp-1{
+	font-family:
+	'Saira-Extra-Condensed',
+	// 'm-plus-1p',
+	// 'rounded-mplus-2p-medium',
+	// 'rounded-mplus-2p-light',
+	// 'rounded-l-mplus-1mn-light',
+	'logotype-jp',
+	'rounded-l-mplus-1mn-regular',
+	// 'rounded-l-mplus-1mn-medium',
+	sans-serif;
+}
+
+body{
+	background-color:#f9f7f1;
+	font-family:
+	'Saira-Extra-Condensed'
+	// 'Neothic',
+	// 'rounded-mplus-2p-light',
+	// 'rounded-mplus-2p-medium',
+	'rounded-l-mplus-1mn-regular',
+	'm-plus-1p',
+	sans-serif;
+}
+
+img{
+	filter: grayscale(40%)sepia(50%);
+	transition: .5s;
+	&:hover{
+		filter: none;
+	}
+	// filter: sepia(50%);
+}
+
+h2{
+	.subheading{
+		padding-left:8px;
+		// word-break: keep-all;
+	}
+}
+
+.navbar{
+	color:$accent-color;
+	background-color: $accent-bg-color;
+	backdrop-filter: blur(15px);
+}
+
+.headerTitle{
+	font-family: 'Neothic';
+}
+
+.defultProfImg{
+	max-width: 10rem;
+	max-height: 10rem;
+	border:.5rem solid rgba(0,0,0,.2);
+}
+
+.name{
+	word-break: break-all;
+	.firstName{
+		word-break: keep-all;
+	}
+}
+
+.resume-content{
+	width: 100%;
+	ul{
+		margin-top: 8px;
+	}
+}
+
+#about{
+	.tags{
+		padding: 0;
+		li{
+			// word-break: keep-all;
+			padding: 8px 16px;
+			margin: 4px;
+			line-height: 1rem;
+			// border: 1px solid $accent-bg-color;
+			border-radius: 10rem;
+			color: #fff;
+			background-color: $accent-color;
+		
+		}
+	}
+}
+
+#experience{
+	.h6{
+		display: inline;
+		padding: 0 8px;
+		line-height: .5rem;
+		min-width: 100px;
+		background-color: $accent-bg-color;
+		color: #fff;
+		// border-radius: 10rem;
+		i{padding: 0 8px;}
+	}
+}
