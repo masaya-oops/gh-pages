@@ -1,0 +1,343 @@
+doctype html
+html(lang='en')
+
+	include page/common/_head.pug
+
+	//- body
+	body#page-top
+
+		//- side nav
+		nav#sideNav.navbar.navbar-expand-lg.navbar-dark._bg-primary.fixed-top
+			a.navbar-brand.js-scroll-trigger(href='#page-top')
+				span.d-block.d-lg-none.headerTitle Portfolio
+				span.d-none.d-lg-block
+					img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='img/profile.GIF', alt='')
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarSupportedContent.collapse.navbar-collapse
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#about') About
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#experience') Experience
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#skills') Skills
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#Work') Work
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#Self-analysis') Self-analysis
+					li.nav-item
+						a.nav-link.js-scroll-trigger(href='#LABO') LABO
+
+		.container-fluid.p-0
+
+			//- section1
+			section#about.resume-section.p-3.p-lg-5.d-flex.align-items-center
+				.w-100
+					span._d-none.d-lg-block
+						img.d-lg-none.img-fluid.defultProfImg.img-profile.rounded-circle.mx-auto.mb-2(src='img/profile.GIF', alt='')
+					h1.mb-0.name
+						| Masaya
+						span.text-primary.firstName  Osada
+					.subheading.mb-5
+						| Earth | Japan Tokyo
+						//- br
+						//- | (000) 0000-0000
+						br
+						a(href='mailto:masaya.osada.1991@gmail.com') @gmail.com
+					//- p.lead.mb-5
+					//- 	| 1991年生 | 霊合成人 火星人(-) | 現在はWEB制作の仕事をしております | 大学は情報学部、新卒入社の業種はIT | 4年間勤務、WEB制作・デザインを目指し転職 | ストレングスファインダーのTOP1の資質は「原点思考」
+
+					h3 Overview
+
+					ul.tags
+						li.list-inline-item 1991年生
+						li.list-inline-item 霊合成人 火星人(-)
+						li.list-inline-item 現在はWEB制作の仕事をしております
+						li.list-inline-item 大学は情報学部、新卒入社の業種はIT
+						li.list-inline-item IT保守運用4年間勤務、WEB制作・デザイン業へ転職
+						li.list-inline-item ストレングスファインダーのTOP1の資質は「原点思考」
+						//- li.list-inline-item test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+
+					h3 SNS
+					.social-icons
+						a(href='#')
+							i.fab.fa-linkedin-in
+						a(href='#')
+							i.fab.fa-github
+						a(href='#')
+							i.fab.fa-twitter
+						a(href='#')
+							i.fab.fa-facebook-f
+
+			hr.m-0
+
+			//- ---------------
+			//- 経歴
+			//- ---------------
+			section#experience.resume-section.p-3.p-lg-5.d-flex.justify-content-center
+				.w-100
+
+					h2.mb-5 Experience
+						span.subheading.font-jp-1 経歴
+
+					.resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+						.resume-content
+							h6.h6.mb-0 Jul. 2019
+								|
+								i.fas.fa-caret-right
+								| Present
+
+							h3.mt-0.mb-3.font-jp-1 WEB制作・バナー制作
+
+							p
+								| ECサイトで使用するWEBページの制作や、バナー画像の制作に携わる。
+							.subheading Skill
+							//- hr.m-0
+							ul
+								li.li HTML5/CSS3
+								li.li Bootstrap
+								li.li pug
+								li.li Photoshop
+								li.li Illustrator
+							.subheading OS
+							//- hr.m-0
+							ul
+								li.li Windows
+						.resume-date.text-md-right
+							//- span.text-primary March 2013 - Present
+
+					.resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+						.resume-content
+
+							h6.h6.mb-0 Oct. 2018
+								|
+								i.fas.fa-caret-right
+								| Jun. 2019
+
+							h3.mt-0.mb-3.font-jp-1 WEBサービス開発
+							//- img.img-fluid.mx-auto.mb-2(src='img/nms-space.JPEG', alt='')
+							p
+								| BtoB向けのWEBサービス開発に携わる。ブラウザアプリとクライアントアプリを開発。仕様書を元に4人チームで開発、テストを回す。
+							.subheading Skill
+							//- hr.m-0
+							ul
+								li.li HTML5/CSS3
+								li.li Bootstrap
+								li.li Vue.js
+							.subheading OS
+							//- hr.m-0
+							ul
+								li.li Windows
+								li.li Mac
+						.resume-date.text-md-right
+							//- span.text-primary December 2011 - March 2013
+
+					.resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+						.resume-content
+							h6.h6.mb-0 Jan. 2016
+								|
+								i.fas.fa-caret-right
+								| Sep. 2018
+							h3.mt-0.mb-3.font-jp-1 データベース・レポート
+							p
+								| データベースからデータを抽出し、マーケティングレポートを作成する業務に携わる。
+							.subheading Skill
+							//- hr.m-0
+							ul
+								li.li mySQL
+								li.li Tableau
+								li.li Treasure Data
+							.subheading OS
+							//- hr.m-0
+							ul
+								li.li Windows
+						.resume-date.text-md-right
+							//- span.text-primary July 2010 - December 2011
+
+					.resume-item.d-flex.flex-column.flex-md-row.justify-content-between
+						.resume-content
+							h6.h6.mb-0 Apr. 2014
+								|
+								i.fas.fa-caret-right
+								| Dec. 2015
+							h3.mt-0.mb-3.font-jp-1 システムエンジニア
+							p
+								| 2014年にシステムエンジニアとして新卒入社。運用・保守の仕事に携わる。
+							.subheading Skill
+							//- hr.m-0
+							ul
+								li.li oracle
+								li.li command prompt
+							.subheading OS
+							//- hr.m-0
+							ul
+								li.li Windows
+						.resume-date.text-md-right
+							//- span.text-primary September 2008 - June 2010
+
+			hr.m-0
+
+			//- ---------------
+			//- スキル
+			//- ---------------
+			section#skills.resume-section.p-3.p-lg-5.d-flex.align-items-center
+				.w-100
+					h2.mb-5 Skills
+						span.subheading.font-jp-1 スキル
+
+					.subheading.mb-3 Programming Languages
+					ul.list-inline.dev-icons
+
+						li.list-inline-item(data-toggle="tooltip" data-placement="top" title="html5")
+							i.fab.fa-html5
+
+						li.list-inline-item(data-toggle="tooltip" data-placement="top" title="BootStrap")
+							i.fab.fa-bootstrap
+
+						li.list-inline-item(data-toggle="tooltip" data-placement="top" title="CSS3")
+							i.fab.fa-css3-alt
+
+						li.list-inline-item(data-toggle="tooltip" data-placement="top" title="Sass")
+							i.fab.fa-sass
+
+						li.list-inline-item(data-toggle="tooltip" data-placement="top" title="mySQL")
+							i.fab.fa-sql mySQL
+
+						//- li.list-inline-item(data-toggle="tooltip" data-placement="top" title="wordpress")
+						//- 	i.fab.fa-wordpress
+
+						li.list-inline-item(data-toggle="tooltip" data-placement="top" title="JavaScript")
+							i.fab.fa-js-square
+
+						li.list-inline-item(data-toggle="tooltip" data-placement="top" title="PHP")
+							i.fab.fa-php
+
+					.subheading.mb-3 Tool
+					ul
+						li.li Photoshop
+						li.li Illustrator
+						li.li wordpress
+						li.li GitHub
+						li.li Tableau
+						li.li Treasure Data
+
+					//- .subheading.mb-3 Workflow
+					//- ul.fa-ul.mb-0
+					//- 	li
+					//- 		i.fa-li.fa.fa-check
+					//- 		| Mobile-First, Responsive Design
+					//- 	li
+					//- 		i.fa-li.fa.fa-check
+					//- 		| Cross Browser Testing & Debugging
+					//- 	li
+					//- 		i.fa-li.fa.fa-check
+					//- 		| Cross Functional Teams
+					//- 	li
+					//- 		i.fa-li.fa.fa-check
+					//- 		| Agile Development & Scrum
+
+			hr.m-0
+
+			//- ---------------
+			//- 実績
+			//- ---------------
+			//- section#Work.resume-section.p-3.p-lg-5.d-flex.align-items-center
+			//- 	.w-100
+
+			//- 		h2.mb-5 Work
+			//- 			span.subheading.font-jp-1 実績
+			//- 		.resume-item.d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+			//- 			.resume-content
+			//- 				h3.mb-0 University of Colorado Boulder
+			//- 				.subheading.mb-3 Bachelor of Science
+			//- 				div Computer Science - Web Development Track
+			//- 				p GPA: 3.23
+			//- 			.resume-date.text-md-right
+			//- 				span.text-primary August 2006 - May 2010
+			//- 		.resume-item.d-flex.flex-column.flex-md-row.justify-content-between
+			//- 			.resume-content
+			//- 				h3.mb-0 James Buchanan High School
+			//- 				.subheading.mb-3 Technology Magnet Program
+			//- 				p GPA: 3.56
+			//- 			.resume-date.text-md-right
+			//- 				span.text-primary August 2002 - May 2006
+
+			//- hr.m-0＠
+
+			//- ---------------
+			//- ストレングスファインダー
+			//- ---------------
+			section#Self-analysis.resume-section.p-3.p-lg-5.d-flex.align-items-center
+				.w-100
+					h2.mb-5 Self-analysis
+						span.subheading.font-jp-1 自己分析
+
+					h3 Strengths Finder
+					p
+						| ストレングスファインダーの解析によって示された5つの資質
+					ol
+						li Context - 原点思考
+						li Deliberative - 慎重さ
+						li Futuristic - 未来志向
+						li Significance - 自我
+						li Intellection - 内省
+					p.mb-0
+						| 過去を理解する事で、未来を予想しようとする。自分の考えや気持ちについて多く語らないようにする。アイデアに命を吹き込む事が好き。低い地位のままでいる事を拒む。アイデア、概念、可能性、人生の意味などをより深く探求するような会話に関わろうとする。
+
+			hr.m-0
+
+			//- ---------------
+			//- 研究
+			//- ---------------
+			section#LABO.resume-section.p-3.p-lg-5.d-flex.align-items-center
+				.w-100
+					h2.mb-5 LABO
+						span.subheading.font-jp-1 試作
+
+					p 商用などではない、WEB制作物でつくってみた作品
+
+					.alert.alert-secondary(role="alert")
+						h4._h4 OOPS!
+						p Still in preparation. See you later.
+
+					//- ul.fa-ul.mb-0
+					//- 	li
+					//- 		i.fa-li.fa.fa-trophy.text-warning
+					//- 		| 						Google Analytics Certified Developer
+					//- 	li
+					//- 		i.fa-li.fa.fa-trophy.text-warning
+					//- 		| 						Mobile Web Specialist - Google Certification
+					//- 	li
+					//- 		i.fa-li.fa.fa-trophy.text-warning
+					//- 		| 						1
+					//- 		sup st
+					//- 		| 						Place - University of Colorado Boulder - Emerging Tech Competition 2009
+					//- 	li
+					//- 		i.fa-li.fa.fa-trophy.text-warning
+					//- 		| 						1
+					//- 		sup st
+					//- 		| 						Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+					//- 	li
+					//- 		i.fa-li.fa.fa-trophy.text-warning
+					//- 		| 						2
+					//- 		sup nd
+					//- 		| 						Place - University of Colorado Boulder - Emerging Tech Competition 2008
+					//- 	li
+					//- 		i.fa-li.fa.fa-trophy.text-warning
+					//- 		| 						1
+					//- 		sup st
+					//- 		| 						Place - James Buchanan High School - Hackathon 2006
+					//- 	li
+					//- 		i.fa-li.fa.fa-trophy.text-warning
+					//- 		| 						3
+					//- 		sup rd
+					//- 		| 						Place - James Buchanan High School - Hackathon 2005
+
+		//- Bootstrap core JavaScript
+		script(src='vendor/jquery/jquery.min.js')
+		script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+		//- Plugin JavaScript
+		script(src='vendor/jquery-easing/jquery.easing.min.js')
+		//- Custom scripts for this template
+		script(src='js/resume.min.js')
